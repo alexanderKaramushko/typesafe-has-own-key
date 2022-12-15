@@ -26,7 +26,7 @@ const mapResponses = {
 ```ts
 responses.map((response) => {
   if (response.name in mapResponses) {
-    // ooops, in-guard doesn't work!
+    // ooops, in-guard doesn't work cause response.name is dynamic!
     return mapResponses[response.name];
   }
 
